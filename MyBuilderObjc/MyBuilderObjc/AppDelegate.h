@@ -1,0 +1,15 @@
+//
+//  AppDelegate.h
+//  MyBuilderObjc
+//
+//  Created by Alexander on 27.11.2019.
+//  Copyright © 2019 jemzza. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+
+@end
+
