@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A21C526A2395A5E200DDF33F /* LAACar.m in Sources */ = {isa = PBXBuildFile; fileRef = A21C52692395A5E200DDF33F /* LAACar.m */; };
+		A292C85B2395D135000047A5 /* LAACarBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A292C85A2395D135000047A5 /* LAACarBuilder.m */; };
+		A292C8642395E2F2000047A5 /* LAAStandardCarBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A292C8632395E2F2000047A5 /* LAAStandardCarBuilder.m */; };
+		A292C8672395E458000047A5 /* LAADirector.m in Sources */ = {isa = PBXBuildFile; fileRef = A292C8662395E458000047A5 /* LAADirector.m */; };
+		A292C86D23965E20000047A5 /* LAASportCarBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A292C86C23965E20000047A5 /* LAASportCarBuilder.m */; };
 		A2C6E8F1238F069B002D9EEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C6E8F0238F069B002D9EEC /* AppDelegate.m */; };
 		A2C6E8F4238F069B002D9EEC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C6E8F3238F069B002D9EEC /* SceneDelegate.m */; };
 		A2C6E8F7238F069B002D9EEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C6E8F6238F069B002D9EEC /* ViewController.m */; };
@@ -14,14 +19,19 @@
 		A2C6E8FC238F069E002D9EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C6E8FB238F069E002D9EEC /* Assets.xcassets */; };
 		A2C6E8FF238F069E002D9EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C6E8FD238F069E002D9EEC /* LaunchScreen.storyboard */; };
 		A2C6E902238F069E002D9EEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C6E901238F069E002D9EEC /* main.m */; };
-		A2C6E90A238F32FC002D9EEC /* LAASportCar.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C6E909238F32FC002D9EEC /* LAASportCar.m */; };
-		A2C6E90D238F336F002D9EEC /* LAAOrdinaryCar.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C6E90C238F336F002D9EEC /* LAAOrdinaryCar.m */; };
-		A2C6E911238F348E002D9EEC /* LAAConcreteBuilder1.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C6E910238F348E002D9EEC /* LAAConcreteBuilder1.m */; };
-		A2C6E914238F34D4002D9EEC /* LAAConcreteBuilder2.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C6E913238F34D4002D9EEC /* LAAConcreteBuilder2.m */; };
-		A2C6E917238F355A002D9EEC /* LAADirector.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C6E916238F355A002D9EEC /* LAADirector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A21C52682395A5E200DDF33F /* LAACar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAACar.h; sourceTree = "<group>"; };
+		A21C52692395A5E200DDF33F /* LAACar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAACar.m; sourceTree = "<group>"; };
+		A292C8592395D135000047A5 /* LAACarBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAACarBuilder.h; sourceTree = "<group>"; };
+		A292C85A2395D135000047A5 /* LAACarBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAACarBuilder.m; sourceTree = "<group>"; };
+		A292C8622395E2F2000047A5 /* LAAStandardCarBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAAStandardCarBuilder.h; sourceTree = "<group>"; };
+		A292C8632395E2F2000047A5 /* LAAStandardCarBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAAStandardCarBuilder.m; sourceTree = "<group>"; };
+		A292C8652395E458000047A5 /* LAADirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAADirector.h; sourceTree = "<group>"; };
+		A292C8662395E458000047A5 /* LAADirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAADirector.m; sourceTree = "<group>"; };
+		A292C86B23965E20000047A5 /* LAASportCarBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAASportCarBuilder.h; sourceTree = "<group>"; };
+		A292C86C23965E20000047A5 /* LAASportCarBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAASportCarBuilder.m; sourceTree = "<group>"; };
 		A2C6E8EC238F069B002D9EEC /* MyBuilderObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBuilderObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C6E8EF238F069B002D9EEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2C6E8F0238F069B002D9EEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,17 +44,6 @@
 		A2C6E8FE238F069E002D9EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2C6E900238F069E002D9EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2C6E901238F069E002D9EEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A2C6E908238F32FC002D9EEC /* LAASportCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAASportCar.h; sourceTree = "<group>"; };
-		A2C6E909238F32FC002D9EEC /* LAASportCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAASportCar.m; sourceTree = "<group>"; };
-		A2C6E90B238F336F002D9EEC /* LAAOrdinaryCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAAOrdinaryCar.h; sourceTree = "<group>"; };
-		A2C6E90C238F336F002D9EEC /* LAAOrdinaryCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAAOrdinaryCar.m; sourceTree = "<group>"; };
-		A2C6E90E238F3434002D9EEC /* LAABuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAABuilder.h; sourceTree = "<group>"; };
-		A2C6E90F238F348E002D9EEC /* LAAConcreteBuilder1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAAConcreteBuilder1.h; sourceTree = "<group>"; };
-		A2C6E910238F348E002D9EEC /* LAAConcreteBuilder1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAAConcreteBuilder1.m; sourceTree = "<group>"; };
-		A2C6E912238F34D4002D9EEC /* LAAConcreteBuilder2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAAConcreteBuilder2.h; sourceTree = "<group>"; };
-		A2C6E913238F34D4002D9EEC /* LAAConcreteBuilder2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAAConcreteBuilder2.m; sourceTree = "<group>"; };
-		A2C6E915238F355A002D9EEC /* LAADirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAADirector.h; sourceTree = "<group>"; };
-		A2C6E916238F355A002D9EEC /* LAADirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAADirector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,17 +82,16 @@
 				A2C6E8F3238F069B002D9EEC /* SceneDelegate.m */,
 				A2C6E8F5238F069B002D9EEC /* ViewController.h */,
 				A2C6E8F6238F069B002D9EEC /* ViewController.m */,
-				A2C6E908238F32FC002D9EEC /* LAASportCar.h */,
-				A2C6E909238F32FC002D9EEC /* LAASportCar.m */,
-				A2C6E90B238F336F002D9EEC /* LAAOrdinaryCar.h */,
-				A2C6E90C238F336F002D9EEC /* LAAOrdinaryCar.m */,
-				A2C6E90E238F3434002D9EEC /* LAABuilder.h */,
-				A2C6E90F238F348E002D9EEC /* LAAConcreteBuilder1.h */,
-				A2C6E910238F348E002D9EEC /* LAAConcreteBuilder1.m */,
-				A2C6E912238F34D4002D9EEC /* LAAConcreteBuilder2.h */,
-				A2C6E913238F34D4002D9EEC /* LAAConcreteBuilder2.m */,
-				A2C6E915238F355A002D9EEC /* LAADirector.h */,
-				A2C6E916238F355A002D9EEC /* LAADirector.m */,
+				A21C52682395A5E200DDF33F /* LAACar.h */,
+				A21C52692395A5E200DDF33F /* LAACar.m */,
+				A292C8592395D135000047A5 /* LAACarBuilder.h */,
+				A292C85A2395D135000047A5 /* LAACarBuilder.m */,
+				A292C8622395E2F2000047A5 /* LAAStandardCarBuilder.h */,
+				A292C8632395E2F2000047A5 /* LAAStandardCarBuilder.m */,
+				A292C86B23965E20000047A5 /* LAASportCarBuilder.h */,
+				A292C86C23965E20000047A5 /* LAASportCarBuilder.m */,
+				A292C8652395E458000047A5 /* LAADirector.h */,
+				A292C8662395E458000047A5 /* LAADirector.m */,
 				A2C6E8F8238F069B002D9EEC /* Main.storyboard */,
 				A2C6E8FB238F069E002D9EEC /* Assets.xcassets */,
 				A2C6E8FD238F069E002D9EEC /* LaunchScreen.storyboard */,
@@ -173,14 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2C6E90A238F32FC002D9EEC /* LAASportCar.m in Sources */,
+				A21C526A2395A5E200DDF33F /* LAACar.m in Sources */,
+				A292C85B2395D135000047A5 /* LAACarBuilder.m in Sources */,
+				A292C8672395E458000047A5 /* LAADirector.m in Sources */,
 				A2C6E8F7238F069B002D9EEC /* ViewController.m in Sources */,
-				A2C6E914238F34D4002D9EEC /* LAAConcreteBuilder2.m in Sources */,
-				A2C6E911238F348E002D9EEC /* LAAConcreteBuilder1.m in Sources */,
-				A2C6E917238F355A002D9EEC /* LAADirector.m in Sources */,
+				A292C86D23965E20000047A5 /* LAASportCarBuilder.m in Sources */,
 				A2C6E8F1238F069B002D9EEC /* AppDelegate.m in Sources */,
-				A2C6E90D238F336F002D9EEC /* LAAOrdinaryCar.m in Sources */,
 				A2C6E902238F069E002D9EEC /* main.m in Sources */,
+				A292C8642395E2F2000047A5 /* LAAStandardCarBuilder.m in Sources */,
 				A2C6E8F4238F069B002D9EEC /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

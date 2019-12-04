@@ -2,23 +2,22 @@
 //  LAADirector.h
 //  MyBuilderObjc
 //
-//  Created by Alexander on 28.11.2019.
+//  Created by Alexander on 03.12.2019.
 //  Copyright © 2019 jemzza. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "LAABuilder.h"
+#import "LAACarBuilder.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LAADirector : NSObject {
-    
-    @private
-    id <LAABuilder> builder;
-}
+@interface LAADirector : NSObject
 
-- (void) update: (id <LAABuilder>) obj;
-- (void) Construct: (NSString *) name;
+@property (nonatomic, strong) LAACarBuilder *_builder;
+
+- (void) setBuilder:(LAACarBuilder *)aBuilder;
+- (LAACar *) getCar;
+- (void) constructCar;
 
 @end
 

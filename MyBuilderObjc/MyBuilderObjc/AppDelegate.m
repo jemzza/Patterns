@@ -8,10 +8,8 @@
 
 #import "AppDelegate.h"
 #import "LAADirector.h"
-#import "LAASportCar.h"
-#import "LAAOrdinaryCar.h"
-#import "LAAConcreteBuilder1.h"
-#import "LAAConcreteBuilder2.h"
+#import "LAAStandardCarBuilder.h"
+#import "LAASportCarBuilder.h"
 
 @interface AppDelegate ()
 
@@ -19,30 +17,21 @@
 
 @implementation AppDelegate
 
-
-
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    LAADirector *director = [[LAADirector alloc]init];
-
-    LAASportCar *productSportCar;
-    LAAConcreteBuilder1 *builder1 = [[LAAConcreteBuilder1 alloc]init];
-    [director update:builder1];
-    [director Construct:@"SportCar"];
-    productSportCar = [builder1 retreiveProduct];
-    [productSportCar useCar];
-    NSLog(@"Car: %@", [productSportCar listParts]);
+    LAAStandardCarBuilder *standardCarBuilder = [[LAAStandardCarBuilder alloc] init];
+    LAASportCarBuilder *sportCarBuilder  = [[LAASportCarBuilder alloc] init];
+    LAADirector *director = [[LAADirector alloc] init];
+    [director setBuilder: standardCarBuilder];
+    [director constructCar];
+    LAACar *car = [director getCar];
+    NSLog(@"Car: type of body %@, engine – %@, hp – %@, seats – %@, GPS – %@, size of wheel %@, transmission – %@", car.typeBody, car.engine, car.HP, car.seatsCount, car.GPS ? @"YES" : @"NO", car.wheelSize, car.transmission);
     
-    LAAOrdinaryCar *productCar;
-    LAAConcreteBuilder2 *builder2 = [[LAAConcreteBuilder2 alloc]init];
-    [director update:builder2];
-    [director Construct:@"OrdinaryCar"];
-    productCar = [builder2 retreiveProduct];
-    [productCar useCar];
-    NSLog(@"Car: %@", [productCar listParts]);
+    [director setBuilder: sportCarBuilder];
+    [director constructCar];
+    car = [director getCar];
+    NSLog(@"Car: type of body %@, engine – %@, hp – %@, seats – %@, GPS – %@, size of wheel %@, transmission – %@", car.typeBody, car.engine, car.HP, car.seatsCount, car.GPS ? @"YES" : @"NO", car.wheelSize, car.transmission);
     
     return YES;
 }

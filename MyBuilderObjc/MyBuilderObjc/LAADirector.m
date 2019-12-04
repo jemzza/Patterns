@@ -2,33 +2,30 @@
 //  LAADirector.m
 //  MyBuilderObjc
 //
-//  Created by Alexander on 28.11.2019.
+//  Created by Alexander on 03.12.2019.
 //  Copyright © 2019 jemzza. All rights reserved.
 //
 
 #import "LAADirector.h"
-#import "LAABuilder.h"
 
 @implementation LAADirector
 
-- (void) update: (id <LAABuilder>) obj {
-    builder = obj;
+- (void) setBuilder:(LAACarBuilder *)aBuilder {
+    self._builder = aBuilder;
 }
 
-- (void) Construct: (NSString *) name {
-    if ([name isEqualToString:@"SportCar"] == YES) {
-        [builder reset];
-        [builder producePartA];
-        [builder producePartB];
-        [builder producePartC];
-        [builder producePartD];
-    } else if ([name isEqualToString:@"OrdinaryCar"] == YES) {
-        [builder reset];
-        [builder producePartA];
-        [builder producePartB];
-        [builder producePartC];
-        [builder producePartD];
-    }
+- (LAACar *) getCar {
+    return self._builder.getCar;
+}
+
+- (void) constructCar {
+    [self._builder buildTypeBody];
+    [self._builder buildEngine];
+    [self._builder buildHP];
+    [self._builder buildSeatsCount];
+    [self._builder buildGPS];
+    [self._builder buildWheelSize];
+    [self._builder buildTransmission];
 }
 
 @end
